@@ -1,0 +1,1725 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-11T06:43:50.639Z",
+  "countries": [
+    {
+      "id": "US",
+      "name": "United States",
+      "flag": "🇺🇸",
+      "accent": "#d9ad45",
+      "region": "North America"
+    },
+    {
+      "id": "CA",
+      "name": "Canada",
+      "flag": "🇨🇦",
+      "accent": "#d9ad45",
+      "region": "North America"
+    },
+    {
+      "id": "JP",
+      "name": "Japan",
+      "flag": "🇯🇵",
+      "accent": "#d9ad45",
+      "region": "Asia"
+    },
+    {
+      "id": "EA",
+      "name": "Euro Area",
+      "flag": "🇪🇺",
+      "accent": "#d9ad45",
+      "region": "Europe"
+    },
+    {
+      "id": "GB",
+      "name": "United Kingdom",
+      "flag": "🇬🇧",
+      "accent": "#d9ad45",
+      "region": "Europe"
+    },
+    {
+      "id": "CN",
+      "name": "China",
+      "flag": "🇨🇳",
+      "accent": "#d9ad45",
+      "region": "Asia"
+    },
+    {
+      "id": "IN",
+      "name": "India",
+      "flag": "🇮🇳",
+      "accent": "#d9ad45",
+      "region": "Asia"
+    },
+    {
+      "id": "AU",
+      "name": "Australia",
+      "flag": "🇦🇺",
+      "accent": "#d9ad45",
+      "region": "Oceania"
+    }
+  ],
+  "engineMeta": {
+    "economy": {
+      "layer": "LAYER 1",
+      "title": "Economy Engine",
+      "subtitle": "Real economic activity — CAUSE",
+      "icon": "🏭"
+    },
+    "policy": {
+      "layer": "LAYER 2",
+      "title": "Policy Engine",
+      "subtitle": "Fed interpretation & action — REACTION",
+      "icon": "🏛️"
+    },
+    "market": {
+      "layer": "LAYER 3",
+      "title": "Market Engine",
+      "subtitle": "Financial market reaction — RESULT",
+      "icon": "📈"
+    }
+  },
+  "sections": [
+    {
+      "id": 1,
+      "title": "Credit & Financial Conditions",
+      "engine": "economy",
+      "icon": "🏦",
+      "color": "green",
+      "description": "Credit availability shapes household and business spending capacity.",
+      "indicators": [
+        {
+          "id": "loan-officer-survey",
+          "name": "Loan Officer Survey",
+          "description": "Bank lending standards and loan demand.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Credit & Financial Conditions",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Credit & Financial Conditions"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "consumer-credit",
+          "name": "Consumer Credit m/m",
+          "description": "Change in consumer credit.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Credit & Financial Conditions",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Credit & Financial Conditions"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "mortgage-delinquencies",
+          "name": "Mortgage Delinquencies",
+          "description": "Share of mortgage balances becoming delinquent.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Credit & Financial Conditions",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Credit & Financial Conditions"
+          ],
+          "polarity": "lower"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Household Income & Purchasing Power",
+      "engine": "economy",
+      "icon": "💰",
+      "color": "cyan",
+      "description": "Income and wages determine household purchasing power.",
+      "indicators": [
+        {
+          "id": "average-hourly-earnings",
+          "name": "Average Hourly Earnings m/m",
+          "description": "Monthly wage growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Household Income",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Household Income"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "personal-income",
+          "name": "Personal Income m/m",
+          "description": "Personal income growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Household Income",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Household Income"
+          ],
+          "polarity": "higher"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Consumer Spending & Demand",
+      "engine": "economy",
+      "icon": "🛒",
+      "color": "red",
+      "description": "Consumer demand is a major engine of U.S. growth.",
+      "indicators": [
+        {
+          "id": "retail-sales",
+          "name": "Retail Sales m/m",
+          "description": "Headline retail sales growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Consumer Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Consumer Demand"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "core-retail-sales",
+          "name": "Core Retail Sales m/m",
+          "description": "Retail sales excluding volatile components.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Consumer Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Consumer Demand"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "personal-spending",
+          "name": "Personal Spending m/m",
+          "description": "Household spending growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Consumer Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Consumer Demand"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "vehicle-sales",
+          "name": "Omdia Total Vehicle Sales",
+          "description": "Vehicle sales pace.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Consumer Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Consumer Demand"
+          ],
+          "polarity": "higher"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Consumer & Business Sentiment",
+      "engine": "economy",
+      "icon": "👥",
+      "color": "gold",
+      "description": "Confidence provides a window into future spending and hiring.",
+      "indicators": [
+        {
+          "id": "cb-consumer-confidence",
+          "name": "CB Consumer Confidence",
+          "description": "Conference Board consumer confidence.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Sentiment",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Sentiment"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "prelim-uom-sentiment",
+          "name": "Prelim UoM Consumer Sentiment",
+          "description": "Preliminary University of Michigan sentiment.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Sentiment",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Sentiment"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "revised-uom-sentiment",
+          "name": "Revised UoM Consumer Sentiment",
+          "description": "Revised University of Michigan sentiment.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Sentiment",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Sentiment"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "prelim-uom-inflation-expectations",
+          "name": "Prelim UoM Inflation Expectations",
+          "description": "Preliminary inflation expectations.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Sentiment",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Sentiment"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "revised-uom-inflation-expectations",
+          "name": "Revised UoM Inflation Expectations",
+          "description": "Revised inflation expectations.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Sentiment",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Sentiment"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "tipp-economic-optimism",
+          "name": "RCM/TIPP Economic Optimism",
+          "description": "Household economic optimism.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Sentiment",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Sentiment"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "nfib-small-business",
+          "name": "NFIB Small Business Index",
+          "description": "Small business optimism and conditions.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Sentiment",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Sentiment"
+          ],
+          "polarity": "higher"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Housing & Real Estate",
+      "engine": "economy",
+      "icon": "🏠",
+      "color": "green",
+      "description": "Housing connects construction, employment, wealth and demand.",
+      "indicators": [
+        {
+          "id": "nahb-housing-market",
+          "name": "NAHB Housing Market Index",
+          "description": "Homebuilder sentiment.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Housing",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Housing"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "building-permits",
+          "name": "Building Permits",
+          "description": "Permits for future construction.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Housing",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Housing"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "housing-starts",
+          "name": "Housing Starts",
+          "description": "New residential construction starts.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Housing",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Housing"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "existing-home-sales",
+          "name": "Existing Home Sales",
+          "description": "Existing home transaction volume.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Housing",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Housing"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "new-home-sales",
+          "name": "New Home Sales",
+          "description": "New home sales pace.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Housing",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Housing"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "pending-home-sales",
+          "name": "Pending Home Sales m/m",
+          "description": "Contracted home sales activity.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Housing",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Housing"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "construction-spending",
+          "name": "Construction Spending m/m",
+          "description": "Construction expenditure growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Housing",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Housing"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "hpi",
+          "name": "HPI m/m",
+          "description": "House price index monthly change.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Housing",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Housing"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "sp20-hpi",
+          "name": "S&P/CS Composite-20 HPI y/y",
+          "description": "20-city home price growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Housing",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Housing"
+          ],
+          "polarity": "higher"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Business Demand & Trade",
+      "engine": "economy",
+      "icon": "🏭",
+      "color": "blue",
+      "description": "Orders and trade show demand flowing into production.",
+      "indicators": [
+        {
+          "id": "factory-orders",
+          "name": "Factory Orders m/m",
+          "description": "Manufacturing orders.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Demand"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "durable-goods",
+          "name": "Durable Goods Orders m/m",
+          "description": "Orders for long-lived manufactured goods.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Demand"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "core-durable-goods",
+          "name": "Core Durable Goods Orders m/m",
+          "description": "Core capital-goods demand.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Demand"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "trade-balance",
+          "name": "Trade Balance",
+          "description": "Exports minus imports.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Demand"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "goods-trade-balance",
+          "name": "Goods Trade Balance",
+          "description": "Goods-only trade balance.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Demand"
+          ],
+          "polarity": "higher"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Business Surveys (Leading)",
+      "engine": "economy",
+      "icon": "📊",
+      "color": "blue",
+      "description": "Survey data can turn before hard economic activity.",
+      "indicators": [
+        {
+          "id": "empire-state",
+          "name": "Empire State Manufacturing Index",
+          "description": "New York manufacturing conditions.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "philly-fed",
+          "name": "Philly Fed Manufacturing Index",
+          "description": "Philadelphia manufacturing conditions.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "richmond-fed",
+          "name": "Richmond Manufacturing Index",
+          "description": "Richmond Fed manufacturing conditions.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "chicago-pmi",
+          "name": "Chicago PMI",
+          "description": "Chicago-area business conditions.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "final-manufacturing-pmi",
+          "name": "Final Manufacturing PMI",
+          "description": "Final manufacturing PMI.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "ism-manufacturing",
+          "name": "ISM Manufacturing PMI",
+          "description": "ISM manufacturing activity.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "flash-manufacturing-pmi",
+          "name": "Flash Manufacturing PMI",
+          "description": "Early manufacturing PMI.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "ism-services",
+          "name": "ISM Services PMI",
+          "description": "ISM services activity.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "final-services-pmi",
+          "name": "Final Services PMI",
+          "description": "Final services PMI.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "flash-services-pmi",
+          "name": "Flash Services PMI",
+          "description": "Early services PMI.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "cb-leading-index",
+          "name": "CB Leading Index m/m",
+          "description": "Conference Board leading index.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Business Surveys",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Business Surveys"
+          ],
+          "polarity": "higher"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Production & Capacity",
+      "engine": "economy",
+      "icon": "⚙️",
+      "color": "cyan",
+      "description": "Factory output and capacity utilization show real production pressure.",
+      "indicators": [
+        {
+          "id": "industrial-production",
+          "name": "Industrial Production m/m",
+          "description": "Industrial output growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Production",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Production"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "capacity-utilization",
+          "name": "Capacity Utilization Rate",
+          "description": "Share of productive capacity in use.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Production",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Production"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "construction-spending-2",
+          "name": "Construction Spending m/m",
+          "description": "Construction activity spending.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Production",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Production"
+          ],
+          "polarity": "higher"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Inventories & Energy",
+      "engine": "economy",
+      "icon": "🛢️",
+      "color": "green",
+      "description": "Inventories and energy balances affect production and prices.",
+      "indicators": [
+        {
+          "id": "wholesale-inventories",
+          "name": "Final Wholesale Inventories m/m",
+          "description": "Wholesale inventory growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Inventories & Energy",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Inventories & Energy"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "business-inventories",
+          "name": "Business Inventories m/m",
+          "description": "Business inventory growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Inventories & Energy",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Inventories & Energy"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "api-statistical-bulletin",
+          "name": "API Weekly Statistical Bulletin",
+          "description": "API weekly petroleum statistics.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Inventories & Energy",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Inventories & Energy"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "api-inventories",
+          "name": "API Weekly Inventories Bulletin",
+          "description": "API weekly inventory changes.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Inventories & Energy",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Inventories & Energy"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "crude-oil-inventories",
+          "name": "Crude Oil Inventories",
+          "description": "U.S. crude inventory change.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Inventories & Energy",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Inventories & Energy"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "natural-gas-storage",
+          "name": "Natural Gas Storage",
+          "description": "U.S. natural gas storage change.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Inventories & Energy",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Inventories & Energy"
+          ],
+          "polarity": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Labour Demand",
+      "engine": "economy",
+      "icon": "👤",
+      "color": "cyan",
+      "description": "Openings, hiring and layoffs reveal labour demand before payroll outcomes.",
+      "indicators": [
+        {
+          "id": "jolts-job-openings",
+          "name": "JOLTS Job Openings",
+          "description": "Job openings and labour demand.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Labour Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Labour Demand"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "adp-nonfarm",
+          "name": "ADP Non-Farm Employment Change",
+          "description": "Private payroll estimate.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Labour Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Labour Demand"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "adp-weekly",
+          "name": "ADP Weekly Employment Change",
+          "description": "Weekly employment signal.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Labour Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Labour Demand"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "challenger-job-cuts",
+          "name": "Challenger Job Cuts y/y",
+          "description": "Announced job cuts.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Labour Demand",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Labour Demand"
+          ],
+          "polarity": "lower"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Employment Outcome",
+      "engine": "economy",
+      "icon": "👨‍👩‍👧",
+      "color": "green",
+      "description": "Employment outcomes are the headline labour-market result.",
+      "indicators": [
+        {
+          "id": "nonfarm-payrolls",
+          "name": "Nonfarm Payrolls (NFP)",
+          "description": "Forex Factory release-vintage values: Actual, Forecast, Previous and Surprise.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Thousands",
+          "frequency": "Monthly",
+          "role": "Employment Outcome",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "NFP",
+            "live"
+          ],
+          "polarity": "higher",
+          "seriesId": "FOREXFACTORY-NFP",
+          "live": true
+        },
+        {
+          "id": "unemployment-rate",
+          "name": "Unemployment Rate",
+          "description": "Headline unemployment rate.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Employment Outcome",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Employment Outcome"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "unemployment-claims",
+          "name": "Unemployment Claims",
+          "description": "Initial unemployment claims.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Employment Outcome",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Employment Outcome"
+          ],
+          "polarity": "lower"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Wages, Productivity & Costs",
+      "engine": "economy",
+      "icon": "💵",
+      "color": "cyan",
+      "description": "Wages and productivity feed into labour costs and inflation.",
+      "indicators": [
+        {
+          "id": "hourly-earnings",
+          "name": "Average Hourly Earnings m/m",
+          "description": "Monthly wage growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Wages & Costs",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Wages & Costs"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "nonfarm-productivity",
+          "name": "Prelim Nonfarm Productivity q/q",
+          "description": "Output per worker growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Wages & Costs",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Wages & Costs"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "unit-labor-costs",
+          "name": "Prelim Unit Labor Costs q/q",
+          "description": "Labour cost per unit of output.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Wages & Costs",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Wages & Costs"
+          ],
+          "polarity": "lower"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Input Prices (Producer)",
+      "engine": "economy",
+      "icon": "📄",
+      "color": "blue",
+      "description": "Producer/input prices can pass through to consumers.",
+      "indicators": [
+        {
+          "id": "import-prices",
+          "name": "Import Prices m/m",
+          "description": "Import price growth.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Producer Prices",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Producer Prices"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "ppi",
+          "name": "PPI m/m",
+          "description": "Producer price inflation.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Producer Prices",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Producer Prices"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "core-ppi",
+          "name": "Core PPI m/m",
+          "description": "Core producer inflation.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Producer Prices",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Producer Prices"
+          ],
+          "polarity": "lower"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Consumer Inflation",
+      "engine": "economy",
+      "icon": "%",
+      "color": "red",
+      "description": "Consumer inflation is central to monetary policy.",
+      "indicators": [
+        {
+          "id": "cpi-mm",
+          "name": "CPI m/m",
+          "description": "Monthly headline CPI.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Consumer Inflation",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Consumer Inflation"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "cpi-yy",
+          "name": "CPI y/y",
+          "description": "Yearly headline CPI.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Consumer Inflation",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Consumer Inflation"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "core-cpi-mm",
+          "name": "Core CPI m/m",
+          "description": "Monthly core CPI excluding food and energy.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Consumer Inflation",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Consumer Inflation"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "core-cpi-yy",
+          "name": "Core CPI y/y",
+          "description": "Yearly core CPI.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Consumer Inflation",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Consumer Inflation"
+          ],
+          "polarity": "lower"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Inflation Expectations",
+      "engine": "economy",
+      "icon": "📈",
+      "color": "blue",
+      "description": "Expected inflation influences wages, prices and policy expectations.",
+      "indicators": [
+        {
+          "id": "cleveland-inflation-expectations",
+          "name": "Cleveland Fed Inflation Expectations",
+          "description": "Cleveland Fed inflation expectations.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Inflation Expectations",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Inflation Expectations"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "prelim-uom-inflation",
+          "name": "Prelim UoM Inflation Expectations",
+          "description": "Preliminary UoM inflation expectations.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Inflation Expectations",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Inflation Expectations"
+          ],
+          "polarity": "lower"
+        },
+        {
+          "id": "revised-uom-inflation",
+          "name": "Revised UoM Inflation Expectations",
+          "description": "Revised UoM inflation expectations.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Inflation Expectations",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Inflation Expectations"
+          ],
+          "polarity": "lower"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Fed's Key Inflation Gauge",
+      "engine": "economy",
+      "icon": "🎯",
+      "color": "blue",
+      "description": "Core PCE is the Fed’s preferred inflation measure.",
+      "indicators": [
+        {
+          "id": "core-pce",
+          "name": "Core PCE Price Index m/m",
+          "description": "Core PCE monthly inflation.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Fed's Key Inflation Gauge",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Fed's Key Inflation Gauge"
+          ],
+          "polarity": "lower"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Fiscal / Government",
+      "engine": "policy",
+      "icon": "🏛️",
+      "color": "red",
+      "description": "Fiscal policy affects demand, deficits and Treasury supply.",
+      "indicators": [
+        {
+          "id": "federal-budget-balance",
+          "name": "Federal Budget Balance",
+          "description": "Federal government surplus or deficit.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Fiscal / Government",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Fiscal / Government"
+          ],
+          "polarity": "higher"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "International Flows",
+      "engine": "policy",
+      "icon": "🌐",
+      "color": "red",
+      "description": "Cross-border capital flows affect yields and financial conditions.",
+      "indicators": [
+        {
+          "id": "tic-long-term-purchases",
+          "name": "TIC Long-Term Purchases",
+          "description": "Foreign purchases of long-term U.S. securities.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "International Flows",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "International Flows"
+          ],
+          "polarity": "higher"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Treasury Auctions",
+      "engine": "policy",
+      "icon": "🔨",
+      "color": "red",
+      "description": "Treasury auctions reveal demand for government debt.",
+      "indicators": [
+        {
+          "id": "10y-auction",
+          "name": "10-y Bond Auction",
+          "description": "Demand and pricing at the 10-year Treasury auction.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Treasury Auctions",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Treasury Auctions"
+          ],
+          "polarity": "higher"
+        },
+        {
+          "id": "30y-auction",
+          "name": "30-y Bond Auction",
+          "description": "Demand and pricing at the 30-year Treasury auction.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Treasury Auctions",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Treasury Auctions"
+          ],
+          "polarity": "higher"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Policy Communication (Fed & Others)",
+      "engine": "policy",
+      "icon": "👥",
+      "color": "red",
+      "description": "Speeches and minutes change the expected policy path.",
+      "indicators": [
+        {
+          "id": "fomc-minutes",
+          "name": "FOMC Meeting Minutes",
+          "description": "Detailed record of the FOMC meeting.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "schmid-speaks",
+          "name": "FOMC Member Schmid Speaks",
+          "description": "Fed communication event.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "daly-speaks",
+          "name": "FOMC Member Daly Speaks",
+          "description": "Fed communication event.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "musalem-speaks",
+          "name": "FOMC Member Musalem Speaks",
+          "description": "Fed communication event.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "bostic-speaks",
+          "name": "FOMC Member Bostic Speaks",
+          "description": "Fed communication event.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "bowman-speaks",
+          "name": "FOMC Member Bowman Speaks",
+          "description": "Fed communication event.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "hammack-speaks",
+          "name": "FOMC Member Hammack Speaks",
+          "description": "Fed communication event.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "goolsbee-speaks",
+          "name": "FOMC Member Goolsbee Speaks",
+          "description": "Fed communication event.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "waller-speaks",
+          "name": "Fed Chairman Waller Speaks",
+          "description": "Fed communication event.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "bessent-speaks",
+          "name": "Treasury Sec Bessent Speaks",
+          "description": "Treasury policy communication event.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "trump-speaks",
+          "name": "President Trump Speaks",
+          "description": "Executive-branch policy communication event.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Policy Communication",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Policy Communication"
+          ],
+          "polarity": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Major Policy Events",
+      "engine": "policy",
+      "icon": "🗓️",
+      "color": "red",
+      "description": "Major policy gatherings can reshape the forward path.",
+      "indicators": [
+        {
+          "id": "jackson-hole",
+          "name": "Jackson Hole Symposium",
+          "description": "Major central-bank policy gathering.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Major Policy Events",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Major Policy Events"
+          ],
+          "polarity": "neutral"
+        },
+        {
+          "id": "g20-meetings",
+          "name": "G20 Meetings",
+          "description": "Major global policy meetings.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Major Policy Events",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Major Policy Events"
+          ],
+          "polarity": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Rate Expectations",
+      "engine": "market",
+      "icon": "%",
+      "color": "blue",
+      "description": "Market pricing of future Fed moves.",
+      "indicators": [
+        {
+          "id": "rate-expectations",
+          "name": "Rate Expectations",
+          "description": "Market-implied probability of future cuts, holds or hikes.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Rate Expectations",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Rate Expectations"
+          ],
+          "polarity": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Treasury Yields",
+      "engine": "market",
+      "icon": "📈",
+      "color": "blue",
+      "description": "2Y and 10Y yields transmit policy expectations.",
+      "indicators": [
+        {
+          "id": "treasury-yields",
+          "name": "Treasury Yields",
+          "description": "Key Treasury yields and curve dynamics.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "Treasury Yields",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "Treasury Yields"
+          ],
+          "polarity": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "USD (Dollar)",
+      "engine": "market",
+      "icon": "💲",
+      "color": "blue",
+      "description": "Dollar strength reflects yields, capital flows and policy expectations.",
+      "indicators": [
+        {
+          "id": "usd-dollar",
+          "name": "USD (Dollar)",
+          "description": "U.S. dollar strength and macro sensitivity.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "USD",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "USD"
+          ],
+          "polarity": "neutral"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "US Indices (NQ / ES / YM)",
+      "engine": "market",
+      "icon": "📊",
+      "color": "blue",
+      "description": "Equity index response to rates, USD and risk sentiment.",
+      "indicators": [
+        {
+          "id": "us-indices",
+          "name": "US Indices (NQ / ES / YM)",
+          "description": "Futures/equity index market reaction.",
+          "sourceId": "forexfactory",
+          "sourceName": "Forex Factory — Calendar",
+          "unit": "Release value",
+          "frequency": "Release-based",
+          "role": "US Indices",
+          "sourceUrl": "https://www.forexfactory.com/calendar",
+          "tags": [
+            "US Indices"
+          ],
+          "polarity": "neutral"
+        }
+      ]
+    }
+  ],
+  "sourceRegistry": [
+    {
+      "id": "forexfactory",
+      "name": "Forex Factory — Calendar",
+      "url": "https://www.forexfactory.com/calendar",
+      "type": "calendar"
+    }
+  ]
+}

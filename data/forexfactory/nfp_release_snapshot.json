@@ -1,0 +1,15 @@
+[
+  {"date":"2025-09-05","title":"Non-Farm Employment Change","country":"USD","actual":22,"forecast":75,"previous":79},
+  {"date":"2025-11-20","title":"Non-Farm Employment Change","country":"USD","actual":119,"forecast":53,"previous":-4},
+  {"date":"2025-12-16","title":"Non-Farm Employment Change","dataLabel":"Oct Data","country":"USD","actual":-105,"forecast":null,"previous":108},
+  {"date":"2025-12-16","title":"Non-Farm Employment Change","dataLabel":"Nov Data","country":"USD","actual":64,"forecast":51,"previous":-105},
+  {"date":"2026-01-09","title":"Non-Farm Employment Change","country":"USD","actual":50,"forecast":66,"previous":56},
+  {"date":"2026-02-11","title":"Non-Farm Employment Change","country":"USD","actual":130,"forecast":66,"previous":48},
+  {"date":"2026-03-06","title":"Non-Farm Employment Change","country":"USD","actual":-92,"forecast":58,"previous":126},
+  {"date":"2026-04-03","title":"Non-Farm Employment Change","country":"USD","actual":178,"forecast":65,"previous":-133},
+  {"date":"2026-05-08","title":"Non-Farm Employment Change","country":"USD","actual":115,"forecast":65,"previous":185},
+  {"date":"2026-06-05","title":"Non-Farm Employment Change","country":"USD","actual":172,"forecast":85,"previous":179},
+  {"date":"2026-07-02","title":"Non-Farm Employment Change","country":"USD","actual":57,"forecast":114,"previous":129},
+  {"date":"2026-08-07","title":"Non-Farm Employment Change","country":"USD","actual":-23,"forecast":85,"previous":20},
+  {"date":"2026-09-04","title":"Non-Farm Employment Change","country":"USD","actual":162,"forecast":55,"previous":21}
+]
