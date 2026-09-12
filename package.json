@@ -1,6 +1,6 @@
 {
   "name": "macro-engine-desktop",
-  "version": "15.0.5",
+  "version": "15.0.6",
   "private": true,
   "description": "Macro Engine Desktop with dynamic content, Forex Factory NFP release-vintage data, local SQLite storage, and automatic application updates.",
   "main": "electron/main.cjs",
