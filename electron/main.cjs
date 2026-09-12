@@ -138,7 +138,7 @@ function configureAutoUpdater(){
 async function checkAppUpdate(){
   if(!autoUpdater||!app.isPackaged)return updateState({state:'unsupported'});
   const settings=readJsonFile(settingsPath())||{};
-  const repo=parseGithubRepo(settings.appUpdateUrl||process.env.MACRO_ENGINE_UPDATE_REPO||'');
+  const repo=parseGithubRepo(settings.appUpdaterUrl||process.env.MACRO_ENGINE_UPDATE_REPO||'https://github.com/petermacro/macro-engine-desktop');
   if(!repo)return updateState({state:'not-configured',error:'Application update repository is not configured.'});
   try{
     autoUpdater.setFeedURL({provider:'github',owner:repo.owner,repo:repo.repo,private:false});
