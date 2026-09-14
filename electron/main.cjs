@@ -4,6 +4,10 @@ try { autoUpdater = require('electron-updater').autoUpdater; } catch { autoUpdat
 const path = require('path');
 const fs = require('fs');
 const https = require('https');
+const {
+  assertAllowedSourceUrl,
+  getRequestLimits
+} = require('./security.cjs');
 const initSqlJs = require('sql.js');
 const XLSX = require('xlsx');
 const { jsPDF } = require('jspdf');
@@ -28,8 +32,72 @@ const CATALOG_CACHE=()=>path.join(userData(),'catalog-cache.json');
 const CONTENT_RETRY=()=>path.join(userData(),'content-retry.json');
 const CONTENT_CACHE_TTL_MS=24*60*60*1000;
 
-function requestText(url, options={}){return new Promise((resolve,reject)=>{const req=https.request(url,{method:options.method||'GET',headers:{'User-Agent':'Mozilla/5.0 MacroEngineDesktop/13.1',Accept:'application/json,text/csv,text/plain,*/*;q=0.8',...(options.headers||{})}},res=>{let body='';res.setEncoding('utf8');res.on('data',d=>body+=d);res.on('end',()=>{if(res.statusCode>=200&&res.statusCode<300)resolve(body);else reject(Object.assign(new Error(`HTTP ${res.statusCode}: ${body.slice(0,300)}`),{statusCode:res.statusCode}));});});req.on('error',reject);req.setTimeout(30000,()=>req.destroy(new Error('Request timeout')));if(options.body)req.write(options.body);req.end();});}
-function clean(v){return v===null||v===undefined?'':String(v).trim();}
+function requestText(url, options={}){
+  return new Promise((resolve,reject)=>{
+    let parsedUrl;
+
+    try {
+      parsedUrl = assertAllowedSourceUrl(url);
+    } catch (e) {
+      reject(e);
+      return;
+    }
+
+    const limits = getRequestLimits(options);
+
+    const req = https.request(parsedUrl,{
+      method:options.method||'GET',
+      headers:{
+        'User-Agent':'Mozilla/5.0 MacroEngineDesktop/13.1',
+        Accept:'application/json,text/csv,text/plain,*/*;q=0.8',
+        ...(options.headers||{})
+      }
+    },res=>{
+      let body='';
+      let receivedBytes=0;
+      let tooLarge=false;
+
+      res.setEncoding('utf8');
+
+      res.on('data',d=>{
+        if(tooLarge)return;
+
+        receivedBytes += Buffer.byteLength(d,'utf8');
+
+        if(receivedBytes > limits.maxResponseBytes){
+          tooLarge=true;
+          req.destroy(new Error('Response exceeds the configured security size limit.'));
+          return;
+        }
+
+        body+=d;
+      });
+
+      res.on('end',()=>{
+        if(tooLarge)return;
+
+        if(res.statusCode>=200&&res.statusCode<300){
+          resolve(body);
+        }else{
+          reject(Object.assign(
+            new Error(`HTTP ${res.statusCode}: ${body.slice(0,300)}`),
+            {statusCode:res.statusCode}
+          ));
+        }
+      });
+    });
+
+    req.on('error',reject);
+
+    req.setTimeout(
+      limits.timeoutMs,
+      ()=>req.destroy(new Error('Request timeout'))
+    );
+
+    if(options.body)req.write(options.body);
+    req.end();
+  });
+}function clean(v){return v===null||v===undefined?'':String(v).trim();}
 function parseNum(v){if(v===null||v===undefined||v==='')return null;if(typeof v==='number')return Number.isFinite(v)?v:null;const n=Number(String(v).replace(/,/g,'').replace(/%/g,''));return Number.isFinite(n)?n:null;}
 function fmtK(v){if(!Number.isFinite(v))return '—';return `${v>0?'+':''}${Math.round(v).toLocaleString()}K`;}
 function normalizeDate(v){const d=new Date(v);return Number.isNaN(d.getTime())?String(v).slice(0,10):d.toISOString().slice(0,10);}

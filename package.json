@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "test:ff": "node tools/test-forexfactory-nfp.cjs",
     "test:all": "npm run test:catalog && npm run test:ff && node tools/test-bundled-nfp.cjs && node tools/test-nfp-transform.cjs",
-    "test:catalog": "node tools/test-catalog.cjs"
+    "test:catalog": "node tools/test-catalog.cjs",
+    "test:security": "node tools/test-security.cjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "5.0.2",
